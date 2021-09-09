@@ -9,9 +9,8 @@
 
         <p id="ToCopy" style="color: rgb(255, 255, 255); font: large; font-size: 25; ">
             <script>
-                $.getJSON("https://ninratljk980.github.io/source/MusicPlaylist.html", function(data) {
-                    this.innerHTML = data
-                });
+                const res = await fetch("https://ninratljk980.github.io/source/MusicPlaylist.html")
+                this.innerHTML = res.json()
             </script>
         </p>
 
