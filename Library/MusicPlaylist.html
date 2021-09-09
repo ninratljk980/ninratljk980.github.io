@@ -8,11 +8,7 @@
         </header>
 
         <p id="ToCopy" style="color: rgb(255, 255, 255); font: large; font-size: 25; ">
-            <script>
-                $.getJSON("https://ninratljk980.github.io/source/MusicPlaylist.html", function(data) {
-                    this.innerHTML = data
-                });
-            </script>
+
         </p>
 
         <button style="background-color: rgb(175, 175, 175); color:rgb(75, 75, 75); " onclick="Copy()">
@@ -28,6 +24,9 @@
         </button>
 
         <script>
+            const res = await fetch("https://ninratljk980.github.io/source/MusicPlaylist.html")
+            document.getElementById("ToCopy").innerHTML = res.json()
+            
             function Click() {
                 location.href = "https://ninratljk980.github.io/Library"
             };
