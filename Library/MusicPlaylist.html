@@ -28,7 +28,11 @@
         </p>
 
         <button style="background-color: rgb(175, 175, 175); color:rgb(75, 75, 75); " onclick="Copy()">
-            Copy Text
+            Copy text
+        </button>
+
+        <button style="background-color: rgb(175, 175, 175); color: rgb(75, 75, 75); " onclick="Raw()">
+            Open raw
         </button>
 
         <button style="background-color: rgb(175, 175, 175); color: rgb(75, 75, 75); " onclick="Click()">
@@ -37,7 +41,7 @@
 
         <script>
             function Click() {
-                location.href = "http://ninratljk980.github.io/Library"
+                location.href = "https://ninratljk980.github.io/Library"
             };
 
             function Copy() {
@@ -46,6 +50,10 @@
                 navigator.clipboard.writeText(Text);
 
                 alert("Copied!");
+            };
+
+            function Raw() {
+                location.href = "https://ninratljk980.github.io/source/MusicPlaylist.html"
             };
         </script>
     </body>
