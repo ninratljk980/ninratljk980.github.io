@@ -24,7 +24,9 @@
         </button>
 
         <script>
-            document.getElementById("ToCopy").innerHTML = JSON.stringify(JSON.parse("https://ninratljk980.github.io/source/MusicPlaylist.html"));
+            document.getElementById("ToCopy").innerHTML = $.getJSON("https://ninratljk980.github.io/source/MusicPlaylist.html", function(text) {
+                document.getElementById("ToCopy").innerHTML = text
+            });
 
             function Click() {
                 location.href = "https://ninratljk980.github.io/Library"
