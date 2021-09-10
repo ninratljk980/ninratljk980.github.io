@@ -1,12 +1,19 @@
-<html>
+<html lang = "en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="https://ninratljk980.github.io/favicon.ico">
+        <link rel="shortcut icon" href="favicon.ico">
         <title>
             Poom's Site
         </title>
+        <style>
+            header {text-align: center;}
+            p {text-align: center;}
+            button {text-align: center;}
+            input {text-align: center;}
+            h6 {text-align: center;}
+        </style>
     </head>
     <body style="background-color: rgb(75, 75, 75); ">
         <header style="color: rgb(255, 255, 255); font: large; font-size: 50;">
@@ -17,12 +24,24 @@
             Welcome to my website
         </p>
 
+        <header style="color: rgb(255, 255, 255); font: large; font-size: 20;">
+            Categories
+        </header>
+
         <button style="background-color: rgb(175, 175, 175); color: rgb(75, 75, 75); " onclick="Library()">
             Library
         </button>
 
         <button style="background-color: rgb(175, 175, 175); color: rgb(75, 75, 75); " onclick="Assets()">
             Assets
+        </button>
+
+        <header style="color: rgb(255, 255, 255); font: large; font-size: 20;">
+            Admin-LogIn
+        </header>
+
+        <button style="background-color: rgb(175, 175, 175); color: rgb(75, 75, 75); " onclick="Login()">
+            Login
         </button>
 
         <script>
@@ -32,6 +51,10 @@
 
             function Assets() {
                 location.href = "https://ninratljk980.github.io/Assets"
+            };
+
+            function Login() {
+                location.href = "https://ninratljk980.github.io/Login.html"
             };
         </script>
     </body>
