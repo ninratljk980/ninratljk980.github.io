@@ -1,0 +1,40 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title id="Title">
+            Poom's API Menu
+        </title>
+        <style>
+            header {text-align: center;}
+            p {text-align: center;}
+            button {text-align: center;}
+            input {text-align: center;}
+            h6 {text-align: center;}
+        </style>
+    </head>
+    <body style="background-color: rgb(75, 75, 75); color: rgb(255, 255, 255); font: large; font-size: 25; ">
+        <header id="Header" style="color: rgb(255, 255, 255); font: large; font-size: 50;" onmousedown="Home()">
+        
+        </header>
+
+        <button style="background-color: rgb(175, 175, 175); color: rgb(75, 75, 75); " onclick="AdminCommand()">
+            Admin Commands
+        </button>
+
+        <script>
+            var head = document.getElementById("Header");
+            var titl = document.getElementById("Title");
+
+            head.innerHTML = titl.innerHTML;
+
+            function AdminCommand() {
+                location.href = "http://127.0.0.1:5500/api/AdminCommandsModule.html"
+            };
+        </script>
+
+        <script src="Scripts/Home.js"></script>
+    </body>
+</html>

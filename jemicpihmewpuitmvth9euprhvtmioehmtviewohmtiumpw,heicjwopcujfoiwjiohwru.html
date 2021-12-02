@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="favicon.ico">
         <title id="Title">
-            Poom's Site
+            Poom's Site Template
         </title>
         <style>
             header {text-align: center;}
@@ -17,34 +17,14 @@
     </head>
     <body style="background-color: rgb(75, 75, 75); color: rgb(255, 255, 255); font: large; font-size: 25; ">
         <header id="Header" style="color: rgb(255, 255, 255); font: large; font-size: 50;" onmousedown="Home()">
-
+            
         </header>
 
-        <p style="color: rgb(255, 255, 255); font: large; font-size: 20;">
-            Admin Log-In
-        </p>
-
-        <input id="password" type="password" size="50">
-
-        <button id="Login" style="background-color: rgb(175, 175, 175); color: rgb(75, 75, 75); " onclick="Login()">
-            Login
-        </button>
-
         <script>
-            var Tx = document.getElementById("password")
             var head = document.getElementById("Header")
             var titl = document.getElementById("Title")
 
             head.innerHTML = titl.innerHTML
-
-            function Login() {
-
-                if (Tx.value == "IndustrialSocietyAndItsFuture") {
-                    location.href = "template.html"
-                } else {
-                    document.write("Error: Incorrect Password")
-                };
-            };
         </script>
 
         <script src="Scripts/Home.js"></script>

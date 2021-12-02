@@ -1,0 +1,125 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico">
+        <title id="Title">
+            Poom's API Document
+        </title>
+        <style>
+            header {text-align: center;}
+            p {text-align: center;}
+            button {text-align: center;}
+            input {text-align: center;}
+            h6 {text-align: center;}
+            code {background-color: rgb(110, 110, 110); border: 1.5px solid rgb(55, 55, 55);}
+            a {color: rgb(255, 255, 255);}
+
+            .header {text-align: left;}
+            .property {background-color: rgb(100, 100, 100); width: 35%;}
+            .template_Header {background-color: rgb(60, 60, 60);}
+            .template_Description {background-color: rgb(95, 95, 95);}
+            .property, .template_Header, .template_Description {text-align: left; border: 1px solid rgb(255, 255, 255);}
+            .description {text-align: left;}
+        </style>
+        
+    </head>
+    <body style="background-color: rgb(75, 75, 75); color: rgb(255, 255, 255); font: large; font-size: 25; ">
+        <header id="Header" style="color: rgb(255, 255, 255); font: large; font-size: 50;" onmousedown="Home()">
+
+        </header>
+
+        <h6 class="description">AdminCommandsModule (or CommandClass or CommandClassV2) was made mainly for Union Developments Admin Commands, powered by <a href="https://devforum.roblox.com/t/all-about-object-oriented-programming/8585">OOP (Object-Oriented Programming)</a></h6>
+
+        <p class="header">Properties</p>
+
+        <table id="CommandClass.Prefix" class="property">
+            <tr>
+                <th class="template_Header"><code>string</code> CommandClass.Prefix</th>
+            </tr>
+            <tr>
+                <td class="template_Description">The command prefix that will be used by <a href="#start()"><code>start()</code></a></td>
+            </tr>
+        </table>
+
+        &nbsp;
+
+        <table id="CommandClass.Commands" class="property">
+            <tr>
+                <th class="template_Header"><code>Array</code> CommandClass.Commands</th>
+            </tr>
+            <tr>
+                <td class="template_Description">A list of <u><code>Command</code></u>s that will be used by the runner.</td>
+            </tr>
+        </table>
+
+        &nbsp;
+
+        <table id="CommandClass.Permission" class="property">
+            <tr>
+                <th class="template_Header"><code>Array</code> CommandClass.Permission</th>
+            </tr>
+            <tr>
+                <td class="template_Description">A list of <u><code>Permission</code></u>s that will be used by the commands.</td>
+            </tr>
+        </table>
+
+        &nbsp;
+
+        <table id="CommandClass.Utilities" class="property">
+            <tr>
+                <th class="template_Header"><code>Dictionary</code> CommandClass.Utilities</th>
+            </tr>
+            <tr>
+                <td class="template_Description">A list of <u><code>function</code></u>s that can be used by anyone. <br />(Mostly useful while using it with the module.)</td>
+            </tr>
+        </table>
+
+        &nbsp;
+
+        <table id="CommandClass.Enum" class="property">
+            <tr>
+                <th class="template_Header"><code>Enums</code> CommandClass.Enum</th>
+            </tr>
+            <tr>
+                <td class="template_Description">A list of <u><code>Enum</code></u>s that can be used by anyone. <br />(Mainly for the module itself.)</td>
+            </tr>
+        </table>
+
+        <p class="header">Functions</p>
+
+        <table id="CommandClass.new()" class="property">
+            <tr>
+                <th class="template_Header"><code>Command</code> CommandClass.new(<code>string</code> Name, <code>function</code> Function, <code>array</code> SpecificPermission <u><code>[optional]</code></u>)</th>
+            </tr>
+            <tr>
+                <td class="template_Description">Returns a new <code>Command</code> Class and list it into the <a href="#CommandClass.Commands"><code>CommandClass.Commands</code></a> array.</td>
+            </tr>
+        </table>
+
+        &nbsp;
+
+        <table id="start()" class="property">
+            <tr>
+                <th class="template_Header"><code>void</code> start(<code>Player</code> player)</th>
+            </tr>
+            <tr>
+                <td class="template_Description">A <u><code>function</code></u> that was used by the module only.</td>
+            </tr>
+        </table>
+
+        &nbsp;
+
+        <p></p>More soon, TBA
+
+        <script>
+            var head = document.getElementById("Header");
+            var titl = document.getElementById("Title");
+
+            head.innerHTML = titl.innerHTML;
+        </script>
+
+        <script src="Scripts/Home.js"></script>
+    </body>
+</html>
