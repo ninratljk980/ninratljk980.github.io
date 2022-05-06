@@ -3,7 +3,7 @@
     const params = new URLSearchParams(location.search);
     
     const method = params.get('method');
-    const string = params.get('string');
+    const string = decodeURIComponent(params.get('string'));
     
     switch(method) {
       case "encode":
