@@ -1,0 +1,15 @@
+<html>
+  <script>
+    const params = new URLSearchParams(location.search);
+    
+    const method = params.get('method');
+    const string = params.get('string');
+    
+    switch(method) {
+      case "encode":
+        document.write(btoa(string));
+      case "decode":
+        document.write(atob(string));
+    };
+  </script>
+</html>
