@@ -5,11 +5,13 @@
     const method = params.get('method');
     const string = decodeURIComponent(params.get('string'));
     
+    document.write(method + ' and ' + string
+    
     switch(method) {
       case "encode":
-        document.write(btoa(string));
+        //document.write(btoa(string));
       case "decode":
-        document.write(atob(string));
+        //document.write(atob(string));
     };
   </script>
 </html>
