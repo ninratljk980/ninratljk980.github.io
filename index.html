@@ -64,6 +64,13 @@
             function Api() {
                 location.href = "api";
             };
+            
+            const params = new URLSearchParams(location.search);
+            const file = params.get('file');
+            
+            if (file == "31594293") {
+                window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+            };
         </script>
     </body>
 </html>
