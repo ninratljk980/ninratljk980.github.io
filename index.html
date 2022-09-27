@@ -69,12 +69,36 @@
         <script id="NjE1Nzk1MDg2">
             const params = new URLSearchParams(location.search);
             const file = params.get('file');
+
+            const body = document.body;
             
-            if (file == "31594293") {
-                window.location.href = atob("aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQ==");
-            } else {
-                document.getElementById("NjE1Nzk1MDg2").remove();
-            };
+            switch (file) {
+                case "31594293":
+                    window.location.href = atob("aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQ==");
+                case "535916102":
+                    const div = document.createElement("div");
+                    div.innerHTML = btoa("Did you just decoded this message just for this? Fool, look better.");
+                    div.style.color = "rgb(255,255,255)";
+                    body.appendChild(div);
+
+                    const comment = document.createComment(atob("WW91IGZvdW5kIG1lLCBnb29kLlxuU28sIEkgZ3JldyBzb21lIHN1c3BpY2lvbiBhYm91dCB0aGUgMjh0aCBldmVuIHRob3VnaHQgdGhhdCBJIERPIE5PVCBoYXZlIGEgY3J1c2ggb24gdGhlIGJ1dCBrZXB0IGFuIGV5ZS5cbkhhaGEgdGhhdCdzIHJpZ2h0LCBpdCdzIGFsbCBmb3IgdGhpcy5cbkFsc28sIG5vdyBJIGtub3cgdGhhdCBzb21lb25lIGFjdHVhbGx5IGxvb2tlZCB1cCBvbiBteSBub3RlYm9vay4uLg=="));
+                    body.appendChild(comment);
+
+                    fetch("https://discord.com/api/webhooks/1024346141631987734/WRGggjxsff5Ek08m6PWMPACAgiNJ2sB6ALJAjzTbFQUyD0Em0WcC-pzCyJGUesZ2JJdF", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({
+                            content: "yooooo somebody looked into your notebook bro"
+                        })
+                    })
+                        .then(data => {
+                            console.log(data);
+                    })
+                };
+
+            document.getElementById("NjE1Nzk1MDg2").remove();
         </script>
     </body>
 </html>
