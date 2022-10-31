@@ -1,0 +1,23 @@
+[
+	{
+		"version": "Alpha Version 5",
+		"changelog": "Main changes for Alpha Version 5\n\n\nAdded Farms, place-able in city menu (click city); they give your city more money and crops (crops not utilized yet)\nAdded Mines, place-able in city menu (click city); they give your city more money and minerals (minerals not utilized yet)\nAdded Mountains; a natural border for your nation\nAdded Border Expansion (In city Menu); the ability to expand your city's border\nAdded Snow for Christmas!!!\nAnd more!",
+		"fullChangelog": "Additions and Changes\n+ Mountains\n+ Improved Funding System\n+ Farms \n+ Mines\n+ Expanding Borders\n+ Country Menu\n+ Improved City GUI\n+ Some GUI Changes\n+ Working Alliances (*)\n+ Working Factions (*)\n+ Ability to Aid (*)\n+ Added more things to Settings\n+ Camera Mode (Bird's Eye View)\n+ Ability to change country name\n+ Ability to change city name\n+ Snow & Fog (For Christmas)\n\n(*) = Buggy, or unstable\n\nFixes and Bugs\n* Many bugs are fixed\n* GUI is less buggy\n* Auto-Mod Improved\n* Game runs smoother\n* Fixed bug where some players couldn't play (Caused by the Auto-Mod)\n* Fixed City Borders\n* Fixed Cinematic Mode\n* Fixed Feedback System\n* City Border System Overhauled"
+	},
+	{
+		"version": "Alpha Version 4",
+		"changelog": "Re-enabled Taxes, Researches (Human Developments only), City Upgrading, Eras Researching, Feedback Response, Updated Fundings GUI, New city models, Less lag (probably), City menu, City limit"
+	},
+	{
+		"version": "Alpha Version 3",
+		"changelog": "Map Revamp, Reverted Taxes (Temporary)"
+	},
+	{
+		"version": "Alpha Version 2",
+		"changelog": "Mobile Support, Improvements, All Cities are added."
+	},
+	{
+		"version": "Alpha Version 1",
+		"changelog": "Cities can gives you money now!"
+	}
+]
