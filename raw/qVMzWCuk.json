@@ -1,0 +1,10 @@
+{
+	"BackgroundMain": "92,98,102",
+	"BackrgroundInner": "134,141,145",
+	"BackgroundDark": "36,39,41",
+	"ButtonExit": "222,77,67",
+	"ButtonLight": "200,200,200",
+	"ButtonDark": "100,100,100",
+	"TextLight": "0,0,0",
+	"TextDark": "241,241,241"
+}
